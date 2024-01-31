@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 const Cart = () => {
-  return <div>About</div>;
+  return <div>cart</div>;
 };
 
 const Wrapper = styled.section`
