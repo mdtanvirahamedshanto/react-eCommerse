@@ -12,24 +12,42 @@ const Navbar = () => {
             <NavLink
               to={"/"}
               className={`navbar-link home-link ${
-                pathname === "about" && "bg-indigo-500"
+                pathname === "/" && "bg-gray-300 w-28 text-center rounded-full"
               } `}
             >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/about"} className=" navbar-link about-link">
+            <NavLink
+              to={"/about"}
+              className={`navbar-link home-link ${
+                pathname === "/about" &&
+                "bg-gray-300 w-32 text-center rounded-full"
+              } `}
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/products"} className="navbar-link product-link">
+            <NavLink
+              to={"/products"}
+              className={`navbar-link home-link ${
+                pathname === "/products" &&
+                "bg-gray-300 w-44 text-center rounded-full"
+              } `}
+            >
               Products
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"} className="navbar-link contact-link">
+            <NavLink
+              to={"/contact"}
+              className={`navbar-link home-link ${
+                pathname === "/contact" &&
+                "bg-gray-300 w-40 text-center rounded-full"
+              } `}
+            >
               Contact
             </NavLink>
           </li>
