@@ -5,8 +5,8 @@ const ErrorPage = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full min-h-screen">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <h2 className="text-3xl text-gray-800 font-bold">404</h2>
-        <h3 className="text-3xl text-gray-800 font-bold">
+        <h2 className="text-6xl text-gray-800 font-bold mb-2">404</h2>
+        <h3 className="text-6xl text-gray-800 font-bold mb-4">
           UH OH! You're lost.
         </h3>
         <p className="italic underline text-2xl">
