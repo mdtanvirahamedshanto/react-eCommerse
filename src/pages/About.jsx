@@ -1,5 +1,12 @@
+import HeroSection from "../components/HeroSection";
+
 const About = () => {
-  return <div>About</div>;
+  const title = "Enjoy Our Store";
+  return (
+    <>
+      <HeroSection title={title} />
+    </>
+  );
 };
 
 export default About;

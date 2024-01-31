@@ -1,13 +1,22 @@
+import { useState } from "react";
+import { CgClose, CgMenu } from "react-icons/cg";
 import { FiShoppingCart } from "react-icons/fi";
 import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const Navbar = () => {
   const { pathname } = useLocation();
+  const [menuIcon, setMenuIcon] = useState(false);
+  console.log(menuIcon);
   return (
     <Nav>
-      <div className="navbar">
-        <ul className="navbar-lists">
+      <div className={`navbar ${menuIcon && "active"}`}>
+        <ul
+          className="navbar-lists"
+          onClick={() => {
+            setMenuIcon(false);
+          }}
+        >
           <li>
             <NavLink
               to={"/"}
@@ -58,6 +67,23 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        {/* Responsibe Button  */}
+        <div className="mobile-navbar-btn">
+          <CgMenu
+            name="menu-outline"
+            className="mobile-nav-icon"
+            onClick={() => {
+              setMenuIcon(true);
+            }}
+          />
+          <CgClose
+            name="close-outline"
+            className="mobile-nav-icon close-outline"
+            onClick={() => {
+              setMenuIcon(false);
+            }}
+          />
+        </div>
       </div>
     </Nav>
   );
