@@ -8,7 +8,7 @@ const Home = () => {
   const title = "E-com Store";
 
   return (
-    <div className="h-screen">
+    <div className="">
       <HeroSection title={title} />
       <Services />
       <Trusted />
