@@ -7,7 +7,6 @@ import styled from "styled-components";
 const Navbar = () => {
   const { pathname } = useLocation();
   const [menuIcon, setMenuIcon] = useState(false);
-  console.log(menuIcon);
   return (
     <Nav>
       <div className={`navbar ${menuIcon && "active"}`}>
